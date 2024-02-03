@@ -12,4 +12,4 @@ def mod(text,img):
     text=model(text,img)
     return text
 app=gr.Interface(fn=mod,inputs=["text","image"],outputs="text",title="THIS IS IMAGE DESCRIBER",theme=gr.themes.Soft())
-url=app.launch(share=True,inbrowser=True,debug=True,auth=("heckto","byte"))
+url=app.launch(share=True,inbrowser=True,debug=True,auth=("heckto","byte"),show_error=True)
